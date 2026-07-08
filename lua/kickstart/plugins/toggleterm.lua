@@ -15,7 +15,7 @@ require('toggleterm').setup {
 
 map(
   'n',
-  '<leader>gg',
+  '<leader>tg',
   function()
     require('toggleterm.terminal').Terminal
       :new({
