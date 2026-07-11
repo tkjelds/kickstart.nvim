@@ -14,7 +14,8 @@ map('n', '<F14>', '<cmd>BufferLineCycleNext<cr>', {
 	silent = true,
 	desc = "Next buffer",
 })
-map('n', '<F15>', '<cmd>BufferLineCloseCurrent<cr>', {
+map('n', '<F15>', '<cmd>:bp<bar>sp<bar>bn<bar>bd<CR>',
+ {
 	noremap = true,
 	silent = true,
 	desc = "Close current buffer",
