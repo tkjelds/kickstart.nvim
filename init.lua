@@ -561,10 +561,12 @@ do
       -- Similar to document symbols, except searches over your entire project.
       vim.keymap.set('n', 'gW', builtin.lsp_dynamic_workspace_symbols, { buffer = buf, desc = 'Open Workspace Symbols' })
 
-      -- Jump to the type of the word under your cursor.
+      -- Jump to the type of the word under your cursorh
       -- Useful when you're not sure what type a variable is and you want to see
       -- the definition of its *type*, not where it was *defined*.
-      vim.keymap.set('n', 'grt', builtin.lsp_type_definitions, { buffer = buf, desc = '[G]oto [T]ype Definition' })
+      vim.keymap.set('n', 'grt', builtin.lsp_type_definitions, { buffer = buf, desc = '[G]oto [T]ype Definition' })     
+      vim.keymap.set("n", "grh", vim.lsp.buf.hover, { buffer = buf, desc = "LSP [H]over", silent = true,
+    })
     end,
   })
 
